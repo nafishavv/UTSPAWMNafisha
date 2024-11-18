@@ -1,0 +1,559 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1976d2 !important;
+    color: #ffffff ;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff); 
+}
+.container{
+    background:#fff;
+    width:450px;
+    padding:1.5rem;
+    margin:50px auto;
+    border-radius:10px;
+    box-shadow:0 20px 35px rgba(0,0,1,0.9);
+}
+
+form{
+    margin:0 2rem;
+}
+.form-title{
+    font-size:1.5rem;
+    font-weight:bold;
+    text-align:center;
+    padding:1.3rem;
+    margin-bottom:0.4rem;
+}
+
+
+#index-page input{
+    color:inherit;
+    width:100%;
+    background-color:transparent;
+    border:none;
+    border-bottom:1px solid #757575;
+    padding-left:1.5rem;
+    font-size:15px;
+}
+#index-page .input-group{
+    padding:1% 0;
+    position:relative;
+
+}
+#index-page .input-group i{
+    position:absolute;
+    color:black;
+}
+
+#index-page input:focus{
+    background-color: transparent;
+    outline:transparent;
+    border-bottom:2px solid hsl(327,90%,28%);
+}
+#index-page input::placeholder{
+    color:transparent;
+}
+
+#index-page label{
+    color:#757575;
+    position:relative;
+    left:1.2em;
+    top:-1.6em;
+    cursor:auto;
+    transition:0.3s ease all;
+}
+
+#index-page input:focus ~ label,
+#index-page input:not(:placeholder-shown) ~ label {
+    top: -3.5em; /* Place it above the input when focused or filled */
+    left: 1.5em;
+    font-size: 0.75rem;
+    color: hsl(242, 71%, 47%);
+}
+
+#index-page button {
+    font-size:1.1rem;
+    padding:8px 0;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    width:100%;
+    background:blue;
+    color:white;
+    cursor:pointer;
+    transition:0.9s;
+  }
+  #index-page button:hover{
+    background:#07001f;
+}
+.or{
+    font-size:1.1rem;
+    margin-top:0.5rem;
+    text-align:center;
+}
+.icons{
+    text-align:center;
+}
+.icons i{
+    color:rgb(125,125,235);
+    padding:0.8rem 1.5rem;
+    border-radius:10px;
+    font-size:1.5rem;
+    cursor:pointer;
+    border:2px solid #dfe9f5;
+    margin:0 15px;
+    transition:1s;
+}
+.icons i:hover{
+    background:#07001f;
+    font-size:1.6rem;
+    border:2px solid rgb(125,125,235);
+}
+.links{
+    display:flex;
+    justify-content:space-between;
+    padding:0 2rem;
+    margin-top:0.9rem;
+    font-weight:bold;
+    align-items: center;
+}
+#signUpButton, #signInButton{
+    color:blue;
+    border:none;
+    background-color:transparent;
+    font-size:1rem;
+    font-weight:bold;
+}
+#signUpButton:hover, #signInButton:hover {
+    text-decoration:underline;
+    color:blue;
+} 
+.messageDiv{
+    background-color:hsl(327,90%,28%);
+    color:white;
+    padding:10px 20px;
+    margin:10px;
+    border-radius: 5px;
+    font-size:1rem;
+    opacity:0;
+    animation:fadeOut 7s forwards;
+
+}
+
+#index-page .auth-btn {
+    margin: 0; 
+    padding: 8px 16px; 
+    background-color: transparent; /* Hapus background */
+    color: blue; /* Teks biru */
+    border: none; /* Hapus border */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: text-decoration 0.2s ease, color 0.2s ease; /* Animasi untuk hover */
+    text-decoration: none; /* Hapus underline awal */
+}
+
+#index-page .auth-btn:hover, .auth-btn:focus {
+    text-decoration: underline; /* Tambahkan underline */
+    background-color: transparent; /* Hapus latar belakang hitam */
+    outline: none; /* Hapus outline */
+    color: blue; /* Pastikan tetap biru */
+}
+
+/* Judul dan elemen lainnya */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    color: #424242; /* Warna teks hasil gaya */
+    margin-top: 20px; /* Jarak dari elemen di atas */
+}
+
+h2, label, button {
+    font-family: 'Poppins', sans-serif; /* Konsisten di seluruh elemen */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+  }
+
+/* Navigation Bar */
+nav {
+    background-color: #2C3E50; /* Darker shade for contrast */
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px; /* Spacing between links */
+}
+
+nav ul li {
+    font-size: 1.2rem; /* Larger font size */
+}
+
+nav a {
+    color: #ECF0F1 !important; /* Softer white */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+nav a:hover {
+    color: #1ABC9C; /* Subtle hover effect */
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+  }
+
+/* Welcome Section */
+main h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #34495E; /* Soft dark blue for elegance */
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.simulasi-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.simulasi {
+    width: 300px;
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.simulasi:hover {
+    transform: scale(1.02);
+}
+
+.simulasi img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Tombol View Course di bawah gambar */
+.view-course {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s; /* Tambahkan transisi */
+}
+
+.view-course:hover {
+    background-color: #004d40;
+    transform: scale(1.05); /* Efek sedikit zoom saat hover */
+}
+
+/* Tombol Coming Soon */
+.coming-soon {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #f39c12; /* Warna oranye */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: not-allowed; /* Menunjukkan tidak bisa diklik */
+    transition: background-color 0.3s;
+}
+
+.coming-soon:hover {
+    background-color: #e67e22; /* Warna oranye lebih gelap saat hover */
+}
+
+/* Tombol Kembali */
+#kembali {
+    margin-top: 30px; /* Jarak yang lebih besar */
+    padding: 10px 20px; /* Padding yang lebih besar */
+    background-color: #00796b; /* Warna tombol */
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#kembali:hover {
+    background-color: #004d40; /* Warna saat hover */
+}
+
+/* Canvas untuk simulasi */
+canvas {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+footer {
+    margin-top: auto;  /* Push footer to the bottom */
+    text-align: center;
+    padding: 10px 0;
+    background: #34495E;
+    color: white;
+}
+
+
+/* Menu Icon */
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #ffffff;
+}
+
+/* Change color on hover */
+.menu-icon:hover {
+    color: #1ABC9C;
+}
+
+.submenu {
+    position: relative;
+    margin-top: 10px; /* Space between main menu items */
+}
+/* Basic styles omitted for brevity */
+
+/* Submenu Title */
+.submenu-title {
+    padding: 10px 15px;
+    font-weight: 600;
+    color: #34495E;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for submenu title */
+.submenu-title:hover {
+    background-color: #1976d2;
+    color: #ffffff;
+}
+
+/* Submenu Items (Always Visible) */
+.submenu-items {
+    padding-left: 25px; /* Indent submenu items */
+    background-color: #f9f9f9; /* Slightly different background */
+    border-radius: 8px;
+    margin-top: 5px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+/* Submenu Items: Individual Links */
+.submenu-items a {
+    display: block;
+    padding: 10px 15px;
+    color: #34495E;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Submenu Items Hover */
+.submenu-items a:hover {
+    background-color: #1976d2;
+    color: #ffffff;
+}
+
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show dropdown on hover */
+header:hover .dropdown-menu,
+.menu-icon:hover + .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #34495E;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dropdown item hover effect */
+.dropdown-menu a:hover {
+    background-color: #1976d2;
+    color: #ffffff;
+}
+
+  /* Profile styles */
+.profile {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .profile h2 {
+    color: #3498db;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 2rem;
+  }
+  
+  .profile-details p {
+    margin: 0.5rem 0;
+  }
+
+  #kotak {
+    width: 600px; /* Lebar kotak */
+    height: 400px; /* Tinggi kotak */
+    border: 2px solid black; /* Batas kotak */
+    position: relative;
+    margin: 20px auto; /* Memusatkan kotak */
+    overflow: hidden; /* Agar bola tidak bisa terlihat keluar dari kotak */
+}
+#bola1,
+#bola2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    transition: left 0.1s ease, top 0.1s ease; /* Pergerakan halus */
+}
+#bola1 {
+    background-color: red;
+    left: 100px;
+    top: 200px;
+}
+#bola2 {
+    background-color: blue;
+    left: 300px;
+    top: 200px;
+}
+
+/* Profile Page Specific Enhancements */
+#profile-page {
+    background: #f4f7fa;  /* Slight light background for contrast */
+}
+
+/* Profile Container */
+#profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+#profile-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;  /* Slightly darker color for the title */
+}
+
+#profile-container div {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #34495e;
+}
+
+/* Enhancing User Info */
+#profile-container span {
+    font-weight: bold;
+    color: #16a085; /* Use a vibrant color to highlight the user data */
+}
+
+/* Responsive Design for Profile Page */
+@media (max-width: 768px) {
+    #profile-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    #profile-container h1 {
+        font-size: 2rem;
+    }
+}
